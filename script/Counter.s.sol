@@ -12,7 +12,7 @@ contract DeployCounter is Script, HelperConfig {
         HelperConfig config = new HelperConfig();
         (address minerApi, address marketApi) = config.activeNetworkConfig();
         if (minerApi == address(0)) {
-            minerApi = address(new MinerAPI(""));
+            minerApi = address(new MinerAPI("tFIL"));
         }
         if (marketApi == address(0)) {
             marketApi = address(new MarketAPI());

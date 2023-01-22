@@ -20,9 +20,9 @@ contract HelperConfig {
     function getWallabyConfig()
         internal
         pure
-        returns (NetworkConfig memory goerliNetworkConfig)
+        returns (NetworkConfig memory wallabyNetworkConfig)
     {
-        goerliNetworkConfig = NetworkConfig({
+        wallabyNetworkConfig = NetworkConfig({
             minerApi: 0xCC79157eb46F5624204f47AB42b3906cAA40eaB7, // Put here the deployed version of the minerApi
             marketApi: 0x326C977E6efc84E512bB9C30f76E30c160eD06FB // Put here the deployed version of the marketApi
         });

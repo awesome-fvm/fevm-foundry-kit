@@ -28,6 +28,8 @@ lint :; solhint src/**/*.sol && solhint src/*.sol
 
 anvil :; anvil -m 'test test test test test test test test test test test junk'
 
+ls -al
+
 # use the "@" to hide the command from your shell 
 deploy-wallaby:; @forge script script/${contract}.s.sol:Deploy${contract} --rpc-url ${WALLABY_RPC_URL}  --private-key ${PRIVATE_KEY}   -vvvv
 
